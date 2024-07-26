@@ -1,4 +1,4 @@
-.custom-select {
+.kzui_custom-select {
   position: relative;
   border: 1px solid #5f68e2;
   border-radius: 4px 4px 0 0;
@@ -8,12 +8,12 @@
   padding: 6px;
 }
 
-.custom-select.disabled {
+.kzui_custom-select.disabled {
   background-color: #f5f5f5;
   cursor: not-allowed;
 }
 
-.custom-select-header {
+.kzui-custom-select-header {
   padding: 8px;
   cursor: pointer;
   display: flex;
@@ -21,7 +21,7 @@
   align-items: center;
 }
 
-.custom-select-menu {
+.kzui-custom-select-menu {
   position: absolute;
   top: 102%;
   left: -1px;
@@ -36,7 +36,7 @@
   min-width: 300px;
 }
 
-.search-input {
+.kzui-search-input {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -45,26 +45,26 @@
   border-top: 1px solid #ccc;
   border-right: 1px solid #ccc;
 }
-.search-input:focus {
+.kzui-search-input:focus {
   outline: none;
   border-bottom: 1px solid #5f68e2;
 }
-.option-item {
+.kzui-option-item {
   padding: 8px;
   cursor: pointer;
   font-size: 15px;
   text-align: start;
 }
 
-.option-item:hover,
-.option-item.selected {
+.kzui-option-item:hover,
+.kzui-option-item.selected {
   background-color: #f0f0f0;
 }
 
-.clear-btn {
+.kzui-clear-btn {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   color: #888;
 }

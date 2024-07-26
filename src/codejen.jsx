@@ -62,32 +62,32 @@ const CustomSelect = ({
   );
 
   return (
-    <div className={`custom-select ${isDisabled ? 'disabled' : ''}`}>
-      <div className="custom-select-header" onClick={handleMenuToggle}>
+    <div className={`kzui_custom-select ${isDisabled ? 'disabled' : ''}`}>
+      <div className="kzui-custom-select-header" onClick={handleMenuToggle}>
         {isClearable &&
           (isMulti
             ? selectedValues?.length > 0
             : selectedValues?.length > 0) && (
-            <button className="clear-btn" onClick={handleClear}>
+            <button className="kzui-clear-btn" onClick={handleClear}>
               ×
             </button>
           )}
 
-        <span className="selected-value">
+        <span className="kzui-selected-value">
           {selectedValues.length > 0
             ? isMulti
               ? selectedValues.map((val) => val.value).join(', ')
               : selectedValues[0].label
             : placeholder}
         </span>
-        <span className="dropdown-icon">▼</span>
+        <span className="kzui-dropdown-icon">▼</span>
       </div>
       {isOpen && (
-        <div className="custom-select-menu">
+        <div className="kzui-custom-select-menu">
           {isSearchable && (
             <input
               type="text"
-              className="search-input"
+              className="kzui-search-input"
               value={searchText}
               onChange={handleSearchChange}
               placeholder="Search..."
@@ -98,7 +98,7 @@ const CustomSelect = ({
               filteredOptions.map((option) => (
                 <li
                   key={option.value}
-                  className={`option-item ${
+                  className={`kzui-option-item ${
                     selectedValues.some((val) => val.value === option.value)
                       ? 'selected'
                       : ''
